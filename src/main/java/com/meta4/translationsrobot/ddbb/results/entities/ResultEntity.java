@@ -1,0 +1,140 @@
+package com.meta4.translationsrobot.ddbb.results.entities;
+
+import com.healthmarketscience.jackcess.*;
+
+import java.io.IOException;
+
+public class ResultEntity {
+
+    public  ResultEntity(Database db) throws IOException {
+        Table table1 = new TableBuilder("M4RCH_ITEMS_OWR")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table2 = new TableBuilder("M4RCH_NODES")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table3 = new TableBuilder("M4RCH_TIS")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table4 = new TableBuilder("M4RCH_T3S")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table5 = new TableBuilder("M4RDC_FIELDS")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table6 = new TableBuilder("M4RDD_FIELDS")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table7 = new TableBuilder("M4RDC_LOGIC_OBJECT")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table8 = new TableBuilder("M4RDD_LOGIC_OBJECT")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+        Table table9 = new TableBuilder("M4RSY_ERROR_MSGSX")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("TranslatorTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idClass", DataType.TEXT))
+                .addColumn(new ColumnBuilder("idObject", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ENG", DataType.TEXT))
+                .addColumn(new ColumnBuilder("FRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("GER", DataType.TEXT))
+                .addColumn(new ColumnBuilder("BRA", DataType.TEXT))
+                .addColumn(new ColumnBuilder("ESP", DataType.TEXT))
+                .toTable(db);
+
+        Table tableFail = new TableBuilder("FAIL")
+                .addColumn(new ColumnBuilder("ID", DataType.LONG)
+                        .setAutoNumber(true))
+                .addColumn(new ColumnBuilder("FunctionalTable", DataType.TEXT))
+                .addColumn(new ColumnBuilder("text", DataType.TEXT))
+                .toTable(db);
+
+
+
+
+
+    }
+}

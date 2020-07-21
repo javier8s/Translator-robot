@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.t3s.M4RchT3S" table="M4RCH_T3S" schema="dbo"
+           catalog="GLOBALHRPRO140619">
+        <id name="idT3">
+            <column name="ID_T3" sql-type="nvarchar(30)" length="30"/>
+        </id>
+        <property name="nT3Eng">
+            <column name="N_T3ENG" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nT3Esp">
+            <column name="N_T3ESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nT3Fra">
+            <column name="N_T3FRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nT3Gen">
+            <column name="N_T3GEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nT3Ger">
+            <column name="N_T3GER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nT3Ita">
+            <column name="N_T3ITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idStreamType">
+            <column name="ID_STREAM_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idTransT3Eng">
+            <column name="ID_TRANS_T3ENG" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransT3Esp">
+            <column name="ID_TRANS_T3ESP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransT3Fra">
+            <column name="ID_TRANS_T3FRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransT3Gen">
+            <column name="ID_TRANS_T3GEN" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransT3Ger">
+            <column name="ID_TRANS_T3GER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransT3Ita">
+            <column name="ID_TRANS_T3ITA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtCreate">
+            <column name="DT_CREATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="creationType">
+            <column name="CREATION_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="oleClassId">
+            <column name="OLE_CLASS_ID" sql-type="nvarchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="idMaskQuery">
+            <column name="ID_MASK_QUERY" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="checkConcurrency">
+            <column name="CHECK_CONCURRENCY" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="environmentVars">
+            <column name="ENVIRONMENT_VARS" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="isSeparable">
+            <column name="IS_SEPARABLE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="csExeType">
+            <column name="CS_EXE_TYPE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="isCacheable">
+            <column name="IS_CACHEABLE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="cacheMaxPeriod">
+            <column name="CACHE_MAX_PERIOD" sql-type="numeric(10,6)" precision="10" scale="6" not-null="true"/>
+        </property>
+        <property name="haveSecurity">
+            <column name="HAVE_SECURITY" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="vmCapacityReq">
+            <column name="VM_CAPACITY_REQ" sql-type="numeric(3)" precision="3" not-null="true"/>
+        </property>
+        <property name="isExternal">
+            <column name="IS_EXTERNAL" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="depCrossMod">
+            <column name="DEP_CROSS_MOD" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="isCacheRam">
+            <column name="IS_CACHE_RAM" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="simplified">
+            <column name="SIMPLIFIED" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idService">
+            <column name="ID_SERVICE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idServiceAlt">
+            <column name="ID_SERVICE_ALT" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="isMdCacheable">
+            <column name="IS_MD_CACHEABLE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idOrgType">
+            <column name="ID_ORG_TYPE" sql-type="numeric(2)" precision="2" not-null="true"/>
+        </property>
+        <property name="dtConcurrency">
+            <column name="DT_CONCURRENCY" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="idTransT3Bra">
+            <column name="ID_TRANS_T3BRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="nT3Bra">
+            <column name="N_T3BRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="isDefault">
+            <column name="IS_DEFAULT" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="buffer1">
+            <column name="BUFFER1" sql-type="nvarchar(254)" length="254" not-null="true"/>
+        </property>
+        <property name="buffer2">
+            <column name="BUFFER2" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="buffer3">
+            <column name="BUFFER3" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="dataLanguage">
+            <column name="DATA_LANGUAGE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="metaLanguage">
+            <column name="META_LANGUAGE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idCategory">
+            <column name="ID_CATEGORY" sql-type="nvarchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="idSubcategory">
+            <column name="ID_SUBCATEGORY" sql-type="nvarchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="idApprole">
+            <column name="ID_APPROLE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idSecuser">
+            <column name="ID_SECUSER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtLastUpdate">
+            <column name="DT_LAST_UPDATE" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.webLiteral.M4RwsLiterals" table="M4RWS_LITERALS"
+           schema="dbo" catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true"
+                      class="com.meta4.translationsrobot.ddbb.functional.entities.webLiteral.M4RwsLiteralsPK">
+            <key-property name="idOrganization">
+                <column name="ID_ORGANIZATION" sql-type="nvarchar(4)" length="4"/>
+            </key-property>
+            <key-property name="idType">
+                <column name="ID_TYPE" sql-type="numeric(1)" precision="1"/>
+            </key-property>
+            <key-property name="pathInfo">
+                <column name="PATH_INFO" sql-type="nvarchar(255)"/>
+            </key-property>
+            <key-property name="baseName">
+                <column name="BASE_NAME" sql-type="nvarchar(255)"/>
+            </key-property>
+            <key-property name="idLiteral">
+                <column name="ID_LITERAL" sql-type="nvarchar(255)"/>
+            </key-property>
+        </composite-id>
+        <property name="operation">
+            <column name="OPERATION" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="zvalueeng">
+            <column name="ZVALUEENG" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvalueesp">
+            <column name="ZVALUEESP" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvaluefra">
+            <column name="ZVALUEFRA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvalueger">
+            <column name="ZVALUEGER" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvaluebra">
+            <column name="ZVALUEBRA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvaluegen">
+            <column name="ZVALUEGEN" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="zvalueita">
+            <column name="ZVALUEITA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idApprole">
+            <column name="ID_APPROLE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idSecuser">
+            <column name="ID_SECUSER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtLastUpdate">
+            <column name="DT_LAST_UPDATE" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.DDBB.translators.entities.M4RtrAlstTbl" table="M4RTR_ALST_TBL" schema="dbo"
+           catalog="TRANSHRMS60">
+        <composite-id mapped="true" class="com.meta4.translationsrobot.DDBB.translators.entities.M4RtrAlstTblPK">
+            <key-property name="nombre">
+                <column name="NOMBRE" sql-type="varchar(128)" length="128"/>
+            </key-property>
+            <key-property name="tipo">
+                <column name="TIPO" sql-type="varchar(50)" length="50"/>
+            </key-property>
+            <key-property name="pais">
+                <column name="PAIS" sql-type="varchar(50)" length="50"/>
+            </key-property>
+        </composite-id>
+        <property name="base">
+            <column name="BASE" sql-type="varchar(5)" length="5" not-null="true"/>
+        </property>
+        <property name="transFieldReal">
+            <column name="TRANS_FIELD_REAL" sql-type="varchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="fieldReal">
+            <column name="FIELD_REAL" sql-type="varchar(60)" length="60" not-null="true"/>
+        </property>
+        <property name="fieldLoca">
+            <column name="FIELD_LOCA" sql-type="varchar(60)" length="60" not-null="true"/>
+        </property>
+        <property name="procesar">
+            <column name="PROCESAR" sql-type="varchar(1)" length="1" not-null="true"/>
+        </property>
+        <property name="pkCompReal">
+            <column name="PK_COMP_REAL" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="pkCompLoca">
+            <column name="PK_COMP_LOCA" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="nTablaReal">
+            <column name="N_TABLA_REAL" sql-type="varchar(128)" length="128" not-null="true"/>
+        </property>
+        <property name="tipoReal">
+            <column name="TIPO_REAL" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

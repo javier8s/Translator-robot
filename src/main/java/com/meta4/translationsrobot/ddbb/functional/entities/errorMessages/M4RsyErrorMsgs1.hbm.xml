@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs1"
+           table="M4RSY_ERROR_MSGS1" schema="dbo" catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true"
+                      class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs1PK">
+            <key-property name="idFunModNum">
+                <column name="ID_FUN_MOD_NUM" sql-type="numeric(5)" precision="5"/>
+            </key-property>
+            <key-property name="idFunSmodNum">
+                <column name="ID_FUN_SMOD_NUM" sql-type="numeric(5)" precision="5"/>
+            </key-property>
+            <key-property name="idErrorMsg">
+                <column name="ID_ERROR_MSG" sql-type="numeric(5)" precision="5"/>
+            </key-property>
+        </composite-id>
+        <property name="nErrorMsgeng">
+            <column name="N_ERROR_MSGENG" sql-type="ntext" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

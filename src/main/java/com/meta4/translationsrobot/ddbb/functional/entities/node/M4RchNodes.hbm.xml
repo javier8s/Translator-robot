@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.node.M4RchTis" table="M4RCH_NODES" schema="dbo"
+           catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true" class="com.meta4.translationsrobot.ddbb.functional.entities.node.M4RchNodesPK">
+            <key-property name="idT3">
+                <column name="ID_T3" sql-type="nvarchar(30)" length="30"/>
+            </key-property>
+            <key-property name="idNode">
+                <column name="ID_NODE" sql-type="nvarchar(30)" length="30"/>
+            </key-property>
+        </composite-id>
+        <property name="idTi">
+            <column name="ID_TI" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idCapacityType">
+            <column name="ID_CAPACITY_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="posNodo">
+            <column name="POS_NODO" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="isRoot">
+            <column name="IS_ROOT" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="autoload">
+            <column name="AUTOLOAD" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="uniqueRow">
+            <column name="UNIQUE_ROW" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="numRows">
+            <column name="NUM_ROWS" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="isPlug">
+            <column name="IS_PLUG" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="startDtItem">
+            <column name="START_DT_ITEM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="endDtItem">
+            <column name="END_DT_ITEM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idDmd">
+            <column name="ID_DMD" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="nNodebra">
+            <column name="N_NODEBRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodeeng">
+            <column name="N_NODEENG" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodeesp">
+            <column name="N_NODEESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodefra">
+            <column name="N_NODEFRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodegen">
+            <column name="N_NODEGEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodeger">
+            <column name="N_NODEGER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nNodeita">
+            <column name="N_NODEITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="isVisible">
+            <column name="IS_VISIBLE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idTransNodeeng">
+            <column name="ID_TRANS_NODEENG" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransNodeesp">
+            <column name="ID_TRANS_NODEESP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransNodefra">
+            <column name="ID_TRANS_NODEFRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransNodegen">
+            <column name="ID_TRANS_NODEGEN" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransNodeger">
+            <column name="ID_TRANS_NODEGER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransNodeita">
+            <column name="ID_TRANS_NODEITA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="startCorrDtItem">
+            <column name="START_CORR_DT_ITEM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="endCorrDtItem">
+            <column name="END_CORR_DT_ITEM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="virtualFlagItem">
+            <column name="VIRTUAL_FLAG_ITEM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="nodesType">
+            <column name="NODES_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="dynFilter">
+            <column name="DYN_FILTER" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="isExternal">
+            <column name="IS_EXTERNAL" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="numKeepRows">
+            <column name="NUM_KEEP_ROWS" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="idAutoFilter">
+            <column name="ID_AUTO_FILTER" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idSyncType">
+            <column name="ID_SYNC_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="isOrdered">
+            <column name="IS_ORDERED" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idGroupObjects">
+            <column name="ID_GROUP_OBJECTS" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="affectsDb">
+            <column name="AFFECTS_DB" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="maxNumBlocks">
+            <column name="MAX_NUM_BLOCKS" sql-type="numeric(8)" precision="8" not-null="true"/>
+        </property>
+        <property name="isFree">
+            <column name="IS_FREE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="maxNumRecords">
+            <column name="MAX_NUM_RECORDS" sql-type="numeric(8)" precision="8" not-null="true"/>
+        </property>
+        <property name="dbReload">
+            <column name="DB_RELOAD" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idRsm">
+            <column name="ID_RSM" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="oleDispId">
+            <column name="OLE_DISP_ID" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="oleNodeInterId">
+            <column name="OLE_NODE_INTER_ID" sql-type="nvarchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="idDmdField">
+            <column name="ID_DMD_FIELD" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="numRowsDb">
+            <column name="NUM_ROWS_DB" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="idTransNodebra">
+            <column name="ID_TRANS_NODEBRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idCstype">
+            <column name="ID_CSTYPE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="isDefault">
+            <column name="IS_DEFAULT" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idDmdGroup">
+            <column name="ID_DMD_GROUP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idApprole">
+            <column name="ID_APPROLE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idSecuser">
+            <column name="ID_SECUSER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtLastUpdate">
+            <column name="DT_LAST_UPDATE" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

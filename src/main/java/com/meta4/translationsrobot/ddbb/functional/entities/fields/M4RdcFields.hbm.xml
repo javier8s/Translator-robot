@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.fields.M4RdcFields" table="M4RDC_FIELDS"
+           schema="dbo" catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true" class="com.meta4.translationsrobot.ddbb.functional.entities.fields.M4RdcFieldsPK">
+            <key-property name="idObject">
+                <column name="ID_OBJECT" sql-type="nvarchar(30)" length="30"/>
+            </key-property>
+            <key-property name="idField">
+                <column name="ID_FIELD" sql-type="nvarchar(30)" length="30"/>
+            </key-property>
+        </composite-id>
+        <property name="idTransFldbra">
+            <column name="ID_TRANS_FLDBRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldesp">
+            <column name="ID_TRANS_FLDESP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldger">
+            <column name="ID_TRANS_FLDGER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldgen">
+            <column name="ID_TRANS_FLDGEN" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldfra">
+            <column name="ID_TRANS_FLDFRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldeng">
+            <column name="ID_TRANS_FLDENG" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransFldita">
+            <column name="ID_TRANS_FLDITA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="realName">
+            <column name="REAL_NAME" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="position">
+            <column name="POSITION" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="posList">
+            <column name="POS_LIST" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="posPk">
+            <column name="POS_PK" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idType">
+            <column name="ID_TYPE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="notNull">
+            <column name="NOT_NULL" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idInternalField">
+            <column name="ID_INTERNAL_FIELD" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="ctrlRepetition">
+            <column name="CTRL_REPETITION" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="replyAllTables">
+            <column name="REPLY_ALL_TABLES" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idGroupNull">
+            <column name="ID_GROUP_NULL" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="isNotPluged">
+            <column name="IS_NOT_PLUGED" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idFieldAux">
+            <column name="ID_FIELD_AUX" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtMod">
+            <column name="DT_MOD" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="dtModScript">
+            <column name="DT_MOD_SCRIPT" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="dtCreate">
+            <column name="DT_CREATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="dteClosed">
+            <column name="DTE_CLOSED" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="haveSecurity">
+            <column name="HAVE_SECURITY" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idApprole">
+            <column name="ID_APPROLE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idSecuser">
+            <column name="ID_SECUSER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="dtLastUpdate">
+            <column name="DT_LAST_UPDATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="isPrivate">
+            <column name="IS_PRIVATE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.functional.entities.tis.M4RchTis" table="M4RCH_TIS" schema="dbo"
+           catalog="GLOBALHRPRO140619">
+        <id name="idTi">
+            <column name="ID_TI" sql-type="nvarchar(30)" length="30"/>
+        </id>
+        <property name="nTieng">
+            <column name="N_TIENG" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nTifra">
+            <column name="N_TIFRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nTiesp">
+            <column name="N_TIESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nTiger">
+            <column name="N_TIGER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nTiita">
+            <column name="N_TIITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nTigen">
+            <column name="N_TIGEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idReadSentence">
+            <column name="ID_READ_SENTENCE" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idWriteSentence">
+            <column name="ID_WRITE_SENTENCE" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="idTiBase">
+            <column name="ID_TI_BASE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idInheritType">
+            <column name="ID_INHERIT_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idTransTigen">
+            <column name="ID_TRANS_TIGEN" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTiita">
+            <column name="ID_TRANS_TIITA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTieng">
+            <column name="ID_TRANS_TIENG" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTiger">
+            <column name="ID_TRANS_TIGER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTifra">
+            <column name="ID_TRANS_TIFRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTiesp">
+            <column name="ID_TRANS_TIESP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idReadObject">
+            <column name="ID_READ_OBJECT" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idWriteObject">
+            <column name="ID_WRITE_OBJECT" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTemporary">
+            <column name="ID_TEMPORARY" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="complete">
+            <column name="COMPLETE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="corrected">
+            <column name="CORRECTED" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="isSystemTi">
+            <column name="IS_SYSTEM_TI" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="dtLastUpdate">
+            <column name="DT_LAST_UPDATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="creationType">
+            <column name="CREATION_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="idCstype">
+            <column name="ID_CSTYPE" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idSyncType">
+            <column name="ID_SYNC_TYPE" sql-type="numeric(4)" precision="4" not-null="true"/>
+        </property>
+        <property name="isExternal">
+            <column name="IS_EXTERNAL" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="idSecuser">
+            <column name="ID_SECUSER" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="idTransTibra">
+            <column name="ID_TRANS_TIBRA" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="nTibra">
+            <column name="N_TIBRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idApprole">
+            <column name="ID_APPROLE" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="isDefault">
+            <column name="IS_DEFAULT" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="hasRptMethods">
+            <column name="HAS_RPT_METHODS" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="dtConcurrency">
+            <column name="DT_CONCURRENCY" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="generateSql">
+            <column name="GENERATE_SQL" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+        <property name="dtCreate">
+            <column name="DT_CREATE" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

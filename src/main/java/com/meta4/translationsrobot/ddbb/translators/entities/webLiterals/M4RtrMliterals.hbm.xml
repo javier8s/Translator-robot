@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.translators.entities.webLiterals.M4RtrMliterals"
+           table="M4RTR_MLITERALS" schema="dbo" catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true"
+                      class="com.meta4.translationsrobot.ddbb.translators.entities.webLiterals.M4RtrMliteralsPK">
+            <key-property name="idType">
+                <column name="ID_TYPE" sql-type="numeric(1)" precision="1"/>
+            </key-property>
+            <key-property name="pathInfo">
+                <column name="PATH_INFO" sql-type="nvarchar(255)"/>
+            </key-property>
+            <key-property name="baseName">
+                <column name="BASE_NAME" sql-type="nvarchar(255)"/>
+            </key-property>
+            <key-property name="idLiteral">
+                <column name="ID_LITERAL" sql-type="nvarchar(255)"/>
+            </key-property>
+            <key-property name="idOrganization">
+                <column name="ID_ORGANIZATION" sql-type="nvarchar(4)" length="4"/>
+            </key-property>
+        </composite-id>
+        <property name="zvalueger">
+            <column name="ZVALUEGER" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateGer">
+            <column name="VALIDATE_GER" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorGer">
+            <column name="TRANSLATOR_GER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentGer">
+            <column name="COMMENT_GER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransGer">
+            <column name="PREV_TRANS_GER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateGer">
+            <column name="MOD_DATE_GER" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvaluefra">
+            <column name="ZVALUEFRA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateFra">
+            <column name="VALIDATE_FRA" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorFra">
+            <column name="TRANSLATOR_FRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentFra">
+            <column name="COMMENT_FRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransFra">
+            <column name="PREV_TRANS_FRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateFra">
+            <column name="MOD_DATE_FRA" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvalueesp">
+            <column name="ZVALUEESP" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateEsp">
+            <column name="VALIDATE_ESP" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorEsp">
+            <column name="TRANSLATOR_ESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentEsp">
+            <column name="COMMENT_ESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransEsp">
+            <column name="PREV_TRANS_ESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateEsp">
+            <column name="MOD_DATE_ESP" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvalueusa">
+            <column name="ZVALUEUSA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateUsa">
+            <column name="VALIDATE_USA" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorUsa">
+            <column name="TRANSLATOR_USA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentUsa">
+            <column name="COMMENT_USA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransUsa">
+            <column name="PREV_TRANS_USA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateUsa">
+            <column name="MOD_DATE_USA" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvalueita">
+            <column name="ZVALUEITA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateIta">
+            <column name="VALIDATE_ITA" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorIta">
+            <column name="TRANSLATOR_ITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentIta">
+            <column name="COMMENT_ITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransIta">
+            <column name="PREV_TRANS_ITA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateIta">
+            <column name="MOD_DATE_ITA" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvaluebra">
+            <column name="ZVALUEBRA" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateBra">
+            <column name="VALIDATE_BRA" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorBra">
+            <column name="TRANSLATOR_BRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentBra">
+            <column name="COMMENT_BRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransBra">
+            <column name="PREV_TRANS_BRA" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateBra">
+            <column name="MOD_DATE_BRA" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="zvaluegen">
+            <column name="ZVALUEGEN" sql-type="nvarchar(2000)" length="2000" not-null="true"/>
+        </property>
+        <property name="validateGen">
+            <column name="VALIDATE_GEN" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="translatorGen">
+            <column name="TRANSLATOR_GEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="commentGen">
+            <column name="COMMENT_GEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="prevTransGen">
+            <column name="PREV_TRANS_GEN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="modDateGen">
+            <column name="MOD_DATE_GEN" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="insDate">
+            <column name="INS_DATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="nvarchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="englishOnly">
+            <column name="ENGLISH_ONLY" sql-type="numeric(1)" precision="1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

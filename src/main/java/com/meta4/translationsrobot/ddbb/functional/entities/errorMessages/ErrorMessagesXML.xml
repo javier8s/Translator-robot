@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:sqlserver://QABBDD:1434;database=GLOBALHRPRO140619</property>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+      <mapping class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs1"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/functional/entities/errorMessages/M4RsyErrorMsgs1.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs2"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/functional/entities/errorMessages/M4RsyErrorMsgs2.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs3"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/functional/entities/errorMessages/M4RsyErrorMsgs3.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs4"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/functional/entities/errorMessages/M4RsyErrorMsgs4.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.functional.entities.errorMessages.M4RsyErrorMsgs5"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/functional/entities/errorMessages/M4RsyErrorMsgs5.hbm.xml"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

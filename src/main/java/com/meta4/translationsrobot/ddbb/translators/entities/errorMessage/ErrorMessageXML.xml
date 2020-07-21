@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:sqlserver://QABBDD:1434;database=GLOBALHRPRO140619</property>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+      <mapping class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrBra"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/translators/entities/errorMessage/M4RtrMerrBra.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrEng"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/translators/entities/errorMessage/M4RtrMerrEng.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrEsp"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/translators/entities/errorMessage/M4RtrMerrEsp.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrFra"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/translators/entities/errorMessage/M4RtrMerrFra.hbm.xml"/>
+      <mapping class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrGer"/>
+      <mapping resource="com/meta4/translationsrobot/ddbb/translators/entities/errorMessage/M4RtrMerrGer.hbm.xml"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrEsp" table="M4RTR_MERR_ESP"
+           schema="dbo" catalog="GLOBALHRPRO140619">
+        <composite-id mapped="true"
+                      class="com.meta4.translationsrobot.ddbb.translators.entities.errorMessage.M4RtrMerrEspPK">
+            <key-property name="idFunModNum">
+                <column name="ID_FUN_MOD_NUM" sql-type="numeric(10)" precision="10"/>
+            </key-property>
+            <key-property name="idFunSmodNum">
+                <column name="ID_FUN_SMOD_NUM" sql-type="numeric(10)" precision="10"/>
+            </key-property>
+            <key-property name="idErrorMsg">
+                <column name="ID_ERROR_MSG" sql-type="numeric(10)" precision="10"/>
+            </key-property>
+        </composite-id>
+        <property name="idFmodRedirNum">
+            <column name="ID_FMOD_REDIR_NUM" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="idFsmodRedirNum">
+            <column name="ID_FSMOD_REDIR_NUM" sql-type="numeric(10)" precision="10" not-null="true"/>
+        </property>
+        <property name="idTi">
+            <column name="ID_TI" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="nErrorMsgesp">
+            <column name="N_ERROR_MSGESP" sql-type="ntext" not-null="true"/>
+        </property>
+        <property name="translatorEsp">
+            <column name="TRANSLATOR_ESP" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="validateEsp">
+            <column name="VALIDATE_ESP" sql-type="numeric(5)" precision="5" not-null="true"/>
+        </property>
+        <property name="commnetEsp">
+            <column name="COMMNET_ESP" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="insDate">
+            <column name="INS_DATE" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="bckp">
+            <column name="BCKP" sql-type="nvarchar(1000)" length="1000" not-null="true"/>
+        </property>
+        <property name="developer">
+            <column name="DEVELOPER" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="ownerFlag">
+            <column name="OWNER_FLAG" sql-type="numeric(5)" precision="5" not-null="true"/>
+        </property>
+        <property name="modDateEsp">
+            <column name="MOD_DATE_ESP" sql-type="datetime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
